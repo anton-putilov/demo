@@ -1,6 +1,5 @@
 package ru.haulmont.demo.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import ru.haulmont.demo.entity.Book;
@@ -15,7 +14,7 @@ import java.util.UUID;
 public class BookServiceImplProd implements BookService {
 
     private final BookRepository bookRepository;
-    
+
     public BookServiceImplProd(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
